@@ -54,17 +54,20 @@ function List({ items }) {
 export function HomePage() {
   return <>
     <section className="hero" id="inicio">
-      <img className="hero-background" src={heroPhoto} alt="" aria-hidden="true" fetchpriority="high" width="1920" height="1280" />
-      <div className="hero-content container">
+      <div className="hero-visual">
+        <img src={heroPhoto} alt="" aria-hidden="true" fetchpriority="high" width="1920" height="1280" />
+        <div className="hero-note"><span className="note-mark">VJ</span><span>Vanderson José<small>Advocacia previdenciária e trabalhista</small></span></div>
+      </div>
+      <div className="hero-grid container">
         <div className="hero-copy">
           <span className="eyebrow"><i /> DIREITO DO TRABALHADOR E PREVIDENCIÁRIO</span>
-          <h1>Sofreu um acidente de trabalho ou foi demitido <em>sem receber tudo?</em></h1>
+          <h1><span>Sofreu um acidente de trabalho</span><em>ou foi demitido sem receber tudo?</em></h1>
           <p>Conheça os seus direitos com orientação clara sobre auxílio-acidente, acidente de trabalho e verbas rescisórias.</p>
           <div className="hero-actions"><a className="button button-red" href={whatsappLink("Olá, gostaria de conversar com um advogado sobre meu caso.")} target="_blank" rel="noreferrer">Falar com um advogado <ArrowRight /></a><a className="text-link" href="#atuacao">Conheça as áreas de atuação <ArrowDown /></a></div>
           <div className="hero-proof"><span><ShieldCheck /> Advocacia desde 2008</span><span><HeartHandshake /> Atendimento próximo e transparente</span></div>
         </div>
       </div>
-      <div className="hero-bottom"><span>Atuação no INSS e na Justiça do Trabalho</span><span>Atendimento por WhatsApp</span></div>
+      <div className="hero-bottom"><div className="container"><span>Atuação no INSS e na Justiça do Trabalho</span><span>Atendimento por WhatsApp</span></div></div>
     </section>
 
     <section className="intro section" id="escritorio"><div className="container intro-grid"><div><span className="eyebrow">EXPERIÊNCIA COM ATENDIMENTO DIRETO</span><h2>Uma trajetória construída cuidando de pessoas e dos seus direitos.</h2></div><div className="intro-copy"><p>Dr. Vanderson atua na advocacia desde 2008. O escritório próprio foi aberto em 2010 e hoje conta com o advogado e mais 7 profissionais no acompanhamento dos casos.</p><p>Você entende o que está acontecendo, sem juridiquês. A equipe apresenta possibilidades reais, sem promessas de resultado ou falsas expectativas.</p><a className="text-link" href="#como-funciona">Veja como funciona o atendimento <ArrowRight /></a></div></div></section>

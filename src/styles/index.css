@@ -39,3 +39,24 @@
 .brand{gap:0}.brand img{display:block;width:218px;height:auto;max-height:58px;object-fit:contain;object-position:left center}
 .footer-brand img{width:210px;height:auto;max-height:none;object-fit:contain;object-position:left center}
 @media(max-width:700px){.brand img{width:184px;max-height:50px}.footer-brand img{width:196px}}
+
+/* Hero em tela cheia, alinhado ao layout da LP Eliane Sousa */
+.hero{position:relative;isolation:isolate;display:flex;min-height:clamp(690px,78vh,800px);flex-direction:column;justify-content:space-between;overflow:hidden;background:#210609;color:#fff}
+.hero:after{display:none}
+.hero-grid{position:relative;z-index:2;display:flex;align-items:center;width:min(1180px,calc(100% - 64px));min-height:clamp(630px,calc(78vh - 54px),746px);padding-block:74px 84px}
+.hero-copy{width:min(720px,65%);max-width:720px}
+.hero h1{max-width:760px;margin:25px 0 21px;font-size:clamp(3.2rem,5.5vw,5rem);line-height:1.015;letter-spacing:-.047em}
+.hero h1 span,.hero h1 em{display:block}
+.hero h1 em{margin-top:.06em;color:#e2c37c}
+.hero-copy>p{max-width:585px;font-size:1rem;line-height:1.7}
+.hero-visual{position:absolute;z-index:0;inset:0;width:100%;height:100%;overflow:hidden}
+.hero-visual:after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(16,5,6,.97) 0%,rgba(22,7,8,.91) 32%,rgba(23,8,9,.62) 54%,rgba(20,7,8,.12) 100%),linear-gradient(0deg,rgba(12,5,6,.6),transparent 38%)}
+.hero-visual>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:73% 44%;opacity:.98}
+.hero-note{position:absolute;right:clamp(28px,7vw,100px);bottom:76px;z-index:2;display:flex;align-items:center;gap:13px;padding:14px 19px;border-left:3px solid #d9b861;background:rgba(255,255,255,.97);box-shadow:0 10px 28px #0005;color:#171717;font-family:var(--serif,Georgia,serif);font-size:.94rem;font-weight:600}
+.hero-note small{display:block;margin-top:2px;color:#68605b;font-family:'DM Sans',sans-serif;font-size:.64rem;font-weight:500;letter-spacing:.02em}
+.note-mark{display:grid;width:42px;height:42px;flex:0 0 auto;place-items:center;background:#850e16;color:#e8d29a;font-family:var(--serif,Georgia,serif);font-size:.92rem}
+.hero-bottom{position:relative;z-index:3;display:block;width:100%;padding:0;background:rgba(102,12,20,.97);color:#fff;border:0}
+.hero-bottom .container{display:flex;min-height:54px;align-items:center;justify-content:space-between;gap:16px;padding:0;font-size:.68rem}
+@media(max-width:980px){.hero-grid{width:calc(100% - 52px)}.hero-copy{width:min(680px,75%)}.hero h1{font-size:clamp(3rem,5.8vw,4.25rem)}.hero-visual>img{object-position:75% center}.hero-visual:after{background:linear-gradient(90deg,rgba(16,5,6,.97),rgba(22,7,8,.87) 42%,rgba(23,8,9,.48) 76%,rgba(20,7,8,.16)),linear-gradient(0deg,rgba(12,5,6,.65),transparent 43%)}}
+@media(max-width:700px){.hero{min-height:0}.hero-grid{width:calc(100% - 36px);min-height:660px;padding-block:55px 45px}.hero-copy{width:100%;max-width:540px}.hero h1{font-size:clamp(2.65rem,10vw,3.55rem);line-height:1.045}.hero-copy>p{font-size:.9rem;line-height:1.62}.hero-actions{align-items:stretch;flex-direction:column;gap:14px;margin-top:24px}.hero-actions .button{width:100%}.hero-actions .text-link{justify-content:center}.hero-proof{display:grid;gap:10px;margin-top:24px;font-size:.7rem}.hero-visual>img{object-position:73% center}.hero-visual:after{background:linear-gradient(90deg,rgba(16,5,6,.93),rgba(22,7,8,.81) 56%,rgba(23,8,9,.58)),linear-gradient(0deg,rgba(12,5,6,.84),rgba(12,5,6,.18) 72%)}.hero-note{display:none}.hero-bottom .container{min-height:0;align-items:flex-start;flex-direction:column;gap:0;padding-block:9px;font-size:.61rem}.hero-bottom .container span{padding:3px 0}}
+@media(max-width:380px){.hero-grid{width:calc(100% - 30px);min-height:640px;padding-block:44px 38px}.hero h1{font-size:2.4rem}.hero .eyebrow{font-size:.55rem;letter-spacing:.1em}}

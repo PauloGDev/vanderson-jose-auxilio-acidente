@@ -115,15 +115,24 @@ function List({ items }) {
 function HomePage() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
     /* @__PURE__ */ jsxs("section", { className: "hero", id: "inicio", children: [
-      /* @__PURE__ */ jsx("img", { className: "hero-background", src: heroPhoto, alt: "", "aria-hidden": "true", fetchpriority: "high", width: "1920", height: "1280" }),
-      /* @__PURE__ */ jsx("div", { className: "hero-content container", children: /* @__PURE__ */ jsxs("div", { className: "hero-copy", children: [
+      /* @__PURE__ */ jsxs("div", { className: "hero-visual", children: [
+        /* @__PURE__ */ jsx("img", { src: heroPhoto, alt: "", "aria-hidden": "true", fetchpriority: "high", width: "1920", height: "1280" }),
+        /* @__PURE__ */ jsxs("div", { className: "hero-note", children: [
+          /* @__PURE__ */ jsx("span", { className: "note-mark", children: "VJ" }),
+          /* @__PURE__ */ jsxs("span", { children: [
+            "Vanderson José",
+            /* @__PURE__ */ jsx("small", { children: "Advocacia previdenciária e trabalhista" })
+          ] })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsx("div", { className: "hero-grid container", children: /* @__PURE__ */ jsxs("div", { className: "hero-copy", children: [
         /* @__PURE__ */ jsxs("span", { className: "eyebrow", children: [
           /* @__PURE__ */ jsx("i", {}),
           " DIREITO DO TRABALHADOR E PREVIDENCIÁRIO"
         ] }),
         /* @__PURE__ */ jsxs("h1", { children: [
-          "Sofreu um acidente de trabalho ou foi demitido ",
-          /* @__PURE__ */ jsx("em", { children: "sem receber tudo?" })
+          /* @__PURE__ */ jsx("span", { children: "Sofreu um acidente de trabalho" }),
+          /* @__PURE__ */ jsx("em", { children: "ou foi demitido sem receber tudo?" })
         ] }),
         /* @__PURE__ */ jsx("p", { children: "Conheça os seus direitos com orientação clara sobre auxílio-acidente, acidente de trabalho e verbas rescisórias." }),
         /* @__PURE__ */ jsxs("div", { className: "hero-actions", children: [
@@ -147,10 +156,10 @@ function HomePage() {
           ] })
         ] })
       ] }) }),
-      /* @__PURE__ */ jsxs("div", { className: "hero-bottom", children: [
+      /* @__PURE__ */ jsx("div", { className: "hero-bottom", children: /* @__PURE__ */ jsxs("div", { className: "container", children: [
         /* @__PURE__ */ jsx("span", { children: "Atuação no INSS e na Justiça do Trabalho" }),
         /* @__PURE__ */ jsx("span", { children: "Atendimento por WhatsApp" })
-      ] })
+      ] }) })
     ] }),
     /* @__PURE__ */ jsx("section", { className: "intro section", id: "escritorio", children: /* @__PURE__ */ jsxs("div", { className: "container intro-grid", children: [
       /* @__PURE__ */ jsxs("div", { children: [
