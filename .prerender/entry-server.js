@@ -36,8 +36,20 @@ function Footer() {
       ] })
     ] }),
     /* @__PURE__ */ jsxs("div", { className: "footer-professional", children: [
-      /* @__PURE__ */ jsx("strong", { children: "Vanderson da Silva José Sociedade Individual de Advocacia" }),
-      /* @__PURE__ */ jsx("span", { children: "OAB: informação pendente de confirmação" })
+      /* @__PURE__ */ jsxs("div", { children: [
+        /* @__PURE__ */ jsx("strong", { children: "Vanderson da Silva José Sociedade Individual de Advocacia" }),
+        /* @__PURE__ */ jsx("span", { children: "CNPJ: 29.588.459/0001-30" }),
+        /* @__PURE__ */ jsxs("address", { children: [
+          "Rua Marte, 66 - Centro, Mesquita - RJ",
+          /* @__PURE__ */ jsx("br", {}),
+          "CEP 26553-480"
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxs("div", { children: [
+        /* @__PURE__ */ jsx("strong", { children: "Vanderson da Silva José" }),
+        /* @__PURE__ */ jsx("span", { children: "OAB/RJ 156.681" }),
+        /* @__PURE__ */ jsx("span", { children: "Seccional do Rio de Janeiro" })
+      ] })
     ] }),
     /* @__PURE__ */ jsx("div", { className: "legal-disclaimer", children: "Este material tem caráter meramente informativo e não constitui publicidade profissional nos termos do Provimento nº 205/2021 do CFOAB. As informações aqui veiculadas não garantem resultados específicos." }),
     /* @__PURE__ */ jsxs("div", { className: "footer-bottom", children: [
@@ -67,6 +79,7 @@ const handPhoto = "/assets/hand-sequela-C0xHNtj1.webp";
 const examPhoto = "/assets/examining-patient-NhGcX8cG.jpg";
 const wheelchairPhoto = "/assets/wheelchair-assistance-Dc9Ghtmt.jpg";
 const terminationPhoto = "/assets/termination-paperwork-CMd90B1O.jpg";
+const lawyerPhoto = "/assets/vanderson-da-silva-jose-rb7Dc3GB.png";
 const whatsappNumber = "5521979638666".replace(/\D/g, "");
 const whatsappLink = (message) => `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 const situations = [
@@ -164,11 +177,19 @@ function HomePage() {
     /* @__PURE__ */ jsx("section", { className: "intro section", id: "escritorio", children: /* @__PURE__ */ jsxs("div", { className: "container intro-grid", children: [
       /* @__PURE__ */ jsxs("div", { children: [
         /* @__PURE__ */ jsx("span", { className: "eyebrow", children: "EXPERIÊNCIA COM ATENDIMENTO DIRETO" }),
-        /* @__PURE__ */ jsx("h2", { children: "Uma trajetória construída cuidando de pessoas e dos seus direitos." })
+        /* @__PURE__ */ jsx("h2", { children: "Uma trajetória construída cuidando de pessoas e dos seus direitos." }),
+        /* @__PURE__ */ jsxs("figure", { className: "lawyer-portrait", children: [
+          /* @__PURE__ */ jsx("img", { src: lawyerPhoto, alt: "Dr. Vanderson da Silva José, sentado à mesa em seu escritório", loading: "lazy", width: "1024", height: "669" }),
+          /* @__PURE__ */ jsxs("figcaption", { children: [
+            /* @__PURE__ */ jsx("strong", { children: "Dr. Vanderson da Silva José" }),
+            /* @__PURE__ */ jsx("span", { children: "OAB/RJ 156.681 · Seccional do Rio de Janeiro" })
+          ] })
+        ] })
       ] }),
       /* @__PURE__ */ jsxs("div", { className: "intro-copy", children: [
-        /* @__PURE__ */ jsx("p", { children: "Dr. Vanderson atua na advocacia desde 2008. O escritório próprio foi aberto em 2010 e hoje conta com o advogado e mais 7 profissionais no acompanhamento dos casos." }),
+        /* @__PURE__ */ jsx("p", { children: "Dr. Vanderson da Silva José atua na advocacia desde 2008. O escritório próprio foi aberto em 2010 e hoje conta com o advogado e mais 7 profissionais no acompanhamento dos casos." }),
         /* @__PURE__ */ jsx("p", { children: "Você entende o que está acontecendo, sem juridiquês. A equipe apresenta possibilidades reais, sem promessas de resultado ou falsas expectativas." }),
+        /* @__PURE__ */ jsx("p", { children: "A sede da Vanderson da Silva José Sociedade Individual de Advocacia fica na Rua Marte, 66, Centro, Mesquita – RJ." }),
         /* @__PURE__ */ jsxs("a", { className: "text-link", href: "#como-funciona", children: [
           "Veja como funciona o atendimento ",
           /* @__PURE__ */ jsx(ArrowRight, {})

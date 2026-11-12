@@ -60,3 +60,13 @@
 @media(max-width:980px){.hero-grid{width:calc(100% - 52px)}.hero-copy{width:min(680px,75%)}.hero h1{font-size:clamp(3rem,5.8vw,4.25rem)}.hero-visual>img{object-position:75% center}.hero-visual:after{background:linear-gradient(90deg,rgba(16,5,6,.97),rgba(22,7,8,.87) 42%,rgba(23,8,9,.48) 76%,rgba(20,7,8,.16)),linear-gradient(0deg,rgba(12,5,6,.65),transparent 43%)}}
 @media(max-width:700px){.hero{min-height:0}.hero-grid{width:calc(100% - 36px);min-height:660px;padding-block:55px 45px}.hero-copy{width:100%;max-width:540px}.hero h1{font-size:clamp(2.65rem,10vw,3.55rem);line-height:1.045}.hero-copy>p{font-size:.9rem;line-height:1.62}.hero-actions{align-items:stretch;flex-direction:column;gap:14px;margin-top:24px}.hero-actions .button{width:100%}.hero-actions .text-link{justify-content:center}.hero-proof{display:grid;gap:10px;margin-top:24px;font-size:.7rem}.hero-visual>img{object-position:73% center}.hero-visual:after{background:linear-gradient(90deg,rgba(16,5,6,.93),rgba(22,7,8,.81) 56%,rgba(23,8,9,.58)),linear-gradient(0deg,rgba(12,5,6,.84),rgba(12,5,6,.18) 72%)}.hero-note{display:none}.hero-bottom .container{min-height:0;align-items:flex-start;flex-direction:column;gap:0;padding-block:9px;font-size:.61rem}.hero-bottom .container span{padding:3px 0}}
 @media(max-width:380px){.hero-grid{width:calc(100% - 30px);min-height:640px;padding-block:44px 38px}.hero h1{font-size:2.4rem}.hero .eyebrow{font-size:.55rem;letter-spacing:.1em}}
+
+/* Identificação profissional e retrato fornecidos pelo escritório */
+.lawyer-portrait{margin:32px 0 0;border-bottom:2px solid var(--gold);background:var(--cream)}
+.lawyer-portrait img{display:block;width:100%;height:auto}
+.lawyer-portrait figcaption{display:grid;gap:4px;padding:18px 20px}
+.lawyer-portrait figcaption strong{font-family:var(--serif);font-size:1.2rem;color:var(--ink)}
+.lawyer-portrait figcaption span{font-size:.75rem;color:var(--muted)}
+.footer-professional>div{display:grid;align-content:start;gap:6px}
+.footer-professional address{font-style:normal;color:#ddd}
+@media(max-width:700px){.footer-professional{gap:20px}.lawyer-portrait figcaption{padding:16px}.lawyer-portrait figcaption strong{font-size:1.1rem}}
